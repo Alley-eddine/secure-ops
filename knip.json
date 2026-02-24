@@ -9,6 +9,8 @@
     "src/types/database.types.ts"
   ],
   "ignoreDependencies": [
+    "@supabase/ssr",
+    "@supabase/supabase-js",
     "@tailwindcss/postcss",
     "class-variance-authority",
     "clsx",
