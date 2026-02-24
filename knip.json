@@ -2,6 +2,23 @@
   "$schema": "https://unpkg.com/knip@latest/schema.json",
   "entry": ["src/app/**/*.{ts,tsx}", "src/middleware.ts"],
   "project": ["src/**/*.{ts,tsx}"],
-  "ignore": ["src/components/ui/**"],
-  "ignoreDependencies": ["@tailwindcss/postcss"]
+  "ignore": ["src/components/ui/**", "src/lib/utils.ts"],
+  "ignoreDependencies": [
+    "@tailwindcss/postcss",
+    "class-variance-authority",
+    "clsx",
+    "lucide-react",
+    "radix-ui",
+    "tailwind-merge",
+    "tw-animate-css",
+    "@testing-library/jest-dom",
+    "@testing-library/react",
+    "@testing-library/user-event",
+    "jest",
+    "jest-environment-jsdom",
+    "shadcn",
+    "tailwindcss",
+    "ts-jest",
+    "postcss"
+  ]
 }
