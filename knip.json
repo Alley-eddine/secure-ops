@@ -2,7 +2,12 @@
   "$schema": "https://unpkg.com/knip@latest/schema.json",
   "entry": ["src/app/**/*.{ts,tsx}", "src/middleware.ts"],
   "project": ["src/**/*.{ts,tsx}"],
-  "ignore": ["src/components/ui/**", "src/lib/utils.ts"],
+  "ignore": [
+    "src/components/ui/**",
+    "src/lib/utils.ts",
+    "src/lib/supabase/**",
+    "src/types/database.types.ts"
+  ],
   "ignoreDependencies": [
     "@tailwindcss/postcss",
     "class-variance-authority",
