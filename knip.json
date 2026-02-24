@@ -1,13 +1,14 @@
 {
   "$schema": "https://unpkg.com/knip@latest/schema.json",
-  "entry": ["src/app/**/*.{ts,tsx}", "src/middleware.ts"],
-  "project": ["src/**/*.{ts,tsx}"],
-  "ignore": [
-    "src/components/ui/**",
-    "src/lib/utils.ts",
-    "src/lib/supabase/**",
-    "src/types/database.types.ts"
+  "entry": [
+    "src/app/**/*.{ts,tsx}",
+    "src/middleware.ts",
+    "src/providers/**/*.{ts,tsx}",
+    "jest.config.ts",
+    "jest.setup.ts"
   ],
+  "project": ["src/**/*.{ts,tsx}"],
+  "ignore": ["src/lib/utils.ts", "src/lib/supabase/**", "src/types/database.types.ts"],
   "ignoreDependencies": [
     "@supabase/ssr",
     "@supabase/supabase-js",
@@ -23,9 +24,14 @@
     "@testing-library/user-event",
     "jest",
     "jest-environment-jsdom",
+    "ts-jest",
+    "ts-node",
     "shadcn",
     "tailwindcss",
-    "ts-jest",
     "postcss"
-  ]
+  ],
+  "ignoreExportsUsedInFile": {
+    "interface": true,
+    "type": true
+  }
 }
